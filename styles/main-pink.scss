@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Oswald&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Squada+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('header/header.css');
+
+$light-blue-patcheame:#fbccd1;// colores invertidos
+$pink-patcheame:rgba(153,212,243,0.60);
+
+header{
+    background-image: linear-gradient($pink-patcheame,$light-blue-patcheame)
+}
+
+main{ 
+    #instructions{
+      background-color: $light-blue-patcheame;
+    }
+    #checkout{
+      margin-top: 5%;
+      h3{font-family:'Hind Siliguri', sans-serif;
+          text-align:center;}; 
+      display: flex;
+      flex-flow: row nowrap;
+     .form-group{
+        width:60%;
+        .form {
+          display: flex;
+          flex-flow: row wrap;
+          align-items: center;
+          .form-item{
+            label{
+              #sumar-boton{
+                background-color: #ffffff ;
+                &:hover{
+                  background-color: $light-blue-patcheame;
+                }
+              }           
+            }
+          }
+        }
+    }
+}
+
+footer {
+  background-color: $light-blue-patcheame;
+}
+
+
+}

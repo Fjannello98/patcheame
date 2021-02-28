@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patcheame</title>
+    <meta name="description" content="Patcheame bordados">
+    <meta name="keywords" content="patcheame, bordados, parches, sublimaciones">
+    <meta name="author" content="Facundo Jannello">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="https://instagram.faep8-1.fna.fbcdn.net/v/t51.2885-19/s320x320/128216452_812734999287745_4542698067387012749_n.jpg?_nc_ht=instagram.faep8-1.fna.fbcdn.net&_nc_ohc=jCfRwnd7hbwAX9a9shP&tp=1&oh=017ce4dcf8ca90341b4a03fec17e0703&oe=5FED43CC" type="image/x-icon">
+    <link rel="icon" href="https://instagram.faep8-1.fna.fbcdn.net/v/t51.2885-19/s320x320/128216452_812734999287745_4542698067387012749_n.jpg?_nc_ht=instagram.faep8-1.fna.fbcdn.net&_nc_ohc=jCfRwnd7hbwAX9a9shP&tp=1&oh=017ce4dcf8ca90341b4a03fec17e0703&oe=5FED43CC" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link id="theme" rel="stylesheet" type="text/css" href="">
+    <script defer src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script defer src="js/app.js"></script>
+</head>
+<body>
+    <header id="header">
+           <div class="header-img">
+               <img src="https://http2.mlstatic.com/storage/mshops-appearance-api/images/62/347656462/logo-2020042223162020300.png">
+           </div>
+           <nav id="nav-desktop">
+             <ul>
+                <a href=""><li>Nuestros parches</li></a>
+                <a href=""><li>Quiénes somos</li></a>
+                <a href=""><li>Armá tu patcheame</li></a>
+             </ul>
+           </nav>
+    </header>
+    <main>
+        <div id="carousel-main">
+            <div class="page-title">
+                <h1>Bordados Personalizados</h1>
+                <h2>Parches termoadhesivos para pegar o coser</h2>
+            </div>
+        </div>
+        <div id="instructions">
+            <div class="pasos"><h2><i class="fa fa-heart" aria-hidden="true"></i> Elegís tu patcheame</h2></div>
+            <div class="pasos"><h2><i class="fas fa-hand-holding-usd" aria-hidden="true"></i> Lo cotizás</h2></div>
+            <div class="pasos"><h2><i class="fas fa-box-open"></i> Preparamos el pedido</h2></div>
+        </div>
+        <h1>¡Elegí el tuyo y armalo como quieras!</h1>
+        <div id="checkout">
+             <div class="form-group">
+                <form class="form">
+                    <div id="form-fondo" class="form-item">      
+                          <label>Fondo:</label>
+                           <select id="fondo" name="fondo">
+                          
+                                     <option value="fondo-bordado"> Bordado   </option>
+                                    <option value="fondo-tela"> Tela   </option>
+                           </select>
+                    </div>    
+                    <div id="form-bordados" class="form-item"> 
+                        <label>Cantidad de bordados:</label>     
+                        <select id="bordados" name="bordados">
+                                   <option value="bordados-20"> 20   </option>
+                                  <option value="bordados-50"> 50   </option>
+                                  <option value="bordados-100"> 100   </option>
+                         </select>
+                    </div>  
+                    <div id="form-tamaño" class="form-item"> 
+                        <label>Tamaño del Patcheame:  </label>     
+                        <input id="tamaño-min" name="tamaño-min" type="number">
+                        <span>x</span>
+                        <input id="tamaño-max" name="tamaño-max" type="number">
+                    </div>    
+                    <div id="form-puntadas" class="form-item"> 
+                        <label>Cantidad de puntadas:  </label>     
+                        <input id="cantidad-puntadas" name="cantidad-puntadas" type="number">
+                    </div>  
+                    <div id="form-tamaño-termoAd" class="form-item"> 
+                        <label>Tamaño de termoadhesivo:  </label>     
+                        <input id="tamaño-termoAd-min" name="termoAd-min" type="number">
+                        <span>x</span>
+                        <input id="tamaño-termoAd-max" name="termoAd-max" type="number">
+                    </div>                      
+                    <div id="form-colores" class="form-item"> 
+                        <label>Colores:
+                            <button id="sumar-boton" name="sumar-boton" type="button">+</button>
+                        </label>     
+                        
+                    </div>        
+                </form>
+                
+            </div> 
+            <div class="cart">
+                <h3><i class="fas fa-shopping-cart" aria-hidden="true"></i> Mi Patcheame</h3>
+                <h2 id="mount"></h2>
+                <br>
+                <br>
+            </div>   
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+    </main>
+    <footer>
+        <div class="footer-address">
+             <address>
+               <li><i class="fab fa-whatsapp"></i> +541134008752</li>
+               <li><i class="fab fa-instagram"></i> patcheame</li>
+               <li><i class="fab fa-google"></i> patcheame@gmail.com</li>
+             </address>
+        </div>
+        <div class="footer-social-media">
+           <a href="mailto:patcheame@gmail.com" target="_blank"><img  class="red_social" src="images/icons/gmail.svg" alt="mail logo"></a>
+           <a href="https://wa.me/541134008752" target="_blank"><img class="red_social" src="images/icons/whatsapp.svg" alt="whatsapp logo" ></a>
+           <a href="https://www.instagram.com" target="_blank"><img class="red_social"  src="images/icons/instagram.svg" alt="instagram logo"></a>
+        </div>
+        <span class="footer-copyright"><i class="fab fa-github"></i> Copyright: FJannello98</span>
+   </footer>
+
+</body>
+</html>

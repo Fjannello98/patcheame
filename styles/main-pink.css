@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Oswald&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Squada+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+@import url("header/header.css");
+header {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(153, 212, 243, 0.6)), to(#fbccd1));
+  background-image: linear-gradient(rgba(153, 212, 243, 0.6), #fbccd1);
+}
+
+main #instructions {
+  background-color: #fbccd1;
+}
+
+main #checkout {
+  margin-top: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+}
+
+main #checkout h3 {
+  font-family: 'Hind Siliguri', sans-serif;
+  text-align: center;
+}
+
+main #checkout .form-group {
+  width: 60%;
+}
+
+main #checkout .form-group .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #checkout .form-group .form .form-item label #sumar-boton {
+  background-color: #ffffff;
+}
+
+main #checkout .form-group .form .form-item label #sumar-boton:hover {
+  background-color: #fbccd1;
+}
+
+main footer {
+  background-color: #fbccd1;
+}
+/*# sourceMappingURL=main-pink.css.map */

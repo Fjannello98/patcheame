@@ -1,0 +1,346 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Oswald&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Squada+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+@import url("header/header.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.d-none {
+  display: none !important;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0 !important;
+}
+
+main {
+  background-color: #fbfbfbfb;
+  padding-top: 30vh;
+}
+
+main #carousel-main {
+  height: 10vh;
+  padding-top: 20vh;
+  width: 100%;
+  background-color: rgba(153, 212, 243, 0.6);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main #carousel-main .page-title h1 {
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+main #carousel-main .page-title h2 {
+  font-size: 30px;
+}
+
+main #carousel-main .page-title h1, main #carousel-main .page-title h2 {
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 1px;
+  font-weight: 100;
+  text-align: center;
+}
+
+main #carousel-main .carousel-main-item img {
+  width: 15vw;
+  border-radius: 50%;
+  border: 3px solid #f7f7f7;
+}
+
+main #carousel-main .carousel-main-item:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+main #instructions {
+  padding-top: 15%;
+  height: 80vh;
+  width: 100%;
+  background-color: rgba(153, 212, 243, 0.6);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+main #instructions .pasos {
+  width: 33%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main #instructions .pasos h2 {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+main h1 {
+  margin-top: 5%;
+  font-family: 'Hind Siliguri', sans-serif;
+  text-align: center;
+}
+
+main #checkout {
+  margin-top: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+}
+
+main #checkout h3 {
+  font-family: 'Hind Siliguri', sans-serif;
+  text-align: center;
+}
+
+main #checkout .form-group {
+  width: 60%;
+}
+
+main #checkout .form-group .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #checkout .form-group .form .form-item {
+  margin: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main #checkout .form-group .form .form-item label {
+  font-family: 'Hind Siliguri', sans-serif;
+}
+
+main #checkout .form-group .form .form-item label #sumar-boton {
+  border-radius: 50%;
+  height: 100%;
+  outline: none;
+  background-color: #ffffff;
+}
+
+main #checkout .form-group .form .form-item label #sumar-boton:hover {
+  background-color: rgba(153, 212, 243, 0.6);
+}
+
+main #checkout .form-group .form .form-item label #sumar-boton:active {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+main #checkout .form-group .form .form-item span {
+  font-family: 'Hind Siliguri', sans-serif;
+}
+
+main #checkout .form-group .form .form-item input {
+  margin-left: 2px;
+  display: block;
+  font-family: 'Verdana', sans-serif;
+  font-weight: 400;
+  color: #444;
+  line-height: 1.3;
+  max-width: 50px;
+  padding: .4em .3em .4em .3em;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #aaa;
+  -webkit-box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.03);
+          box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.03);
+  border-radius: .3em;
+  background-color: #ffffff;
+}
+
+main #checkout .form-group .form select {
+  margin-left: 2px;
+  display: block;
+  font-family: 'Verdana', sans-serif;
+  font-weight: 400;
+  color: #444;
+  line-height: 1.3;
+  padding: .4em 1.4em .3em .8em;
+  max-width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 20px auto;
+  border: 1px solid #aaa;
+  -webkit-box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.03);
+          box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.03);
+  border-radius: .3em;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E"), -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f7f7f7));
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E"), linear-gradient(to bottom, #ffffff 0%, #f7f7f7 100%);
+  background-repeat: no-repeat, repeat;
+  background-position: right .10em top 50%, 0 0;
+  background-size: .75em auto, 100%;
+}
+
+main #checkout .form-group .form select option {
+  text-align: center;
+}
+
+main #checkout .form-group .form #form-colores {
+  width: 100%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+main #checkout .cart {
+  width: 40%;
+  border-left: 1px solid #aaa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main #checkout .cart h2 {
+  font-family: 'Squada One', cursive;
+  font-size: 35px;
+  text-align: center;
+}
+
+footer {
+  position: relative;
+  bottom: 0 !important;
+  height: 30vh;
+  background-color: rgba(153, 212, 243, 0.6);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer .footer-address address {
+  list-style: none;
+}
+
+footer .footer-address address li {
+  font-family: 'Rajdhani', sans-serif;
+  color: black;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+footer .footer-social-media {
+  display: inline-block;
+}
+
+footer .footer-social-media a img {
+  width: 40px;
+  padding-top: 40%;
+  margin: 2px;
+}
+
+footer .footer-social-media a img:hover {
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
+}
+
+footer .footer-copyright {
+  position: absolute;
+  bottom: 0;
+  width: 30vw;
+  right: 35vw;
+  left: 35vw;
+  text-align: center;
+  color: black;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+footer .footer-copyright i {
+  color: black;
+}
+
+@media (max-width: 1000px) {
+  footer {
+    position: relative;
+    bottom: 0 !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100vw;
+    height: 50vh;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer-copyright {
+    position: relative !important;
+    right: 0 !important;
+    left: 0 !important;
+  }
+}
+/*# sourceMappingURL=main.css.map */
