@@ -26,7 +26,9 @@ $( document ).ready(function() {
     setTimeout(()=> $("#carousel-img-1").removeClass("d-none").addClass("animate__bounceInDown"), 100);
     setTimeout(()=> $("#carousel-img-2").removeClass("d-none").addClass("animate__bounceInDown"), 200);
     setTimeout(()=> $("#carousel-img-3").removeClass("d-none").addClass("animate__bounceInDown"), 300);
-
+    if (screen.width <= 800){
+        setTimeout(()=> $("#header-nav").removeClass("d-none-responsive").addClass("animate__bounceInDown"), 300);   
+    }
 
 
 
@@ -110,6 +112,8 @@ function Iniciate_cart(){
     $('#mount').html(`<i class="fas fa-dollar-sign" aria-hidden="true"></i> ${cart}`)    
     
 }
+
+
 
 /*var themeCounter=0;
 $("#change-theme").click(function(){
