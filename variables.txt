@@ -1,0 +1,41 @@
+Las variables: 
+
+Tamaño: Maximo 20x30 cm de ancho. 
+Matriz: base de 200 pesos.  
+Wilcom: Ver API. 
+Porcentaje precio extra por urgencia.  
+
+Parche todo bordado: 
+450$ 4000mts Insumos
+Base: 50mts. 7cmx7cm. 49cm2.               0,13$ - 1cm2 de hilo. 50%,70%,100% (cantidad_puntadas)
+      610mts 20x30    600cm2  
+
++10$ por cada color. 
+
+Papel termoadhesivo: true or false. Checkbox.
+2950$ 50x500cm la relacion es 0.12$cm2 x cm2 
+*Por parche 0.36$ por el centimetro (un triple)*
+Puede estar en cualquiera el termoadhesivo. Poner "i" abbr para que explique
+
+Papel de arranque o entretela (true): 
+6950$ 90cmx10000cm 0,008$ por cm2
+Triple por logistica y mano de obra
+doble de eso por desperdicio
+*por cm2  0,1$ quedaría*  
+
+*por cm2 0,24$ quedaría la tela*
+
+
+
+Cantidad de colores: 
+
+                    
+
+Parche 7x7 presupuesto: 
+300$
+
+0,24 * 50 = 12$ (tela)
+0,1  * 50 = 5$  (Entretela)
+0,36 * 50 = 18$ (termoadhesivo)
+4    * 10 = 40$ (son 4 colores)
+0,13 * 50 = 6,5$ (hilo)

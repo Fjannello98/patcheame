@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+  </head>
+  <body>
+    <canvas width="25" height="25" id="plano"></canvas> 
+    <script>
+
+var canvas = document.getElementById("plano");
+var X,Y;
+
+inicializarCanvas();
+
+function inicializarCanvas(){  
+  var ctx = canvas.getContext("2d");
+  var s = getComputedStyle(canvas);
+  var w = s.width;
+  var h = s.height;
+  canvas.width=w.split("px")[0];
+  canvas.height=h.split("px")[0];
+  X=canvas.width/2;
+  Y=canvas.height/2;
+  dibujar(ctx);
+}
+
+function dibujar(ctx){
+  ctx.fillStyle = "#108EFF";
+  ctx.arc(X,Y,X,0,2*Math.PI);
+  ctx.fill();
+}  
+    </script>
+  </body>
+</html>
