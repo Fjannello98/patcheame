@@ -34,8 +34,9 @@ Cantidad de colores:
 Parche 7x7 presupuesto: 
 300$
 
-0,24 * 50 = 12$ (tela)
+0,24 * 50 = 12$ (tela) 
 0,1  * 50 = 5$  (Entretela)
 0,36 * 50 = 18$ (termoadhesivo)
 4    * 10 = 40$ (son 4 colores)
 0,13 * 50 = 6,5$ (hilo)
+

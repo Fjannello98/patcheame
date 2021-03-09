@@ -1,45 +1,24 @@
 'use strict'; //El uso estricto permite encontrar errores antes.
 
-var cart=0;
-var tamaño;
-var cant_puntadas;
-var cant_colores;
-var fondo; // Bordado o liso
-var flag_fondo;
-var tamaño_termoadhesivo;
-var cant_bordados; // 20, 50 o 100
-var flag_cantidadBordados;
-
 
 $( document ).ready(function() {
-    fondo=$('#fondo').val();
-    localStorage.setItem("Fondo",fondo);
-    cant_bordados=$('#bordados').val();
-    localStorage.setItem("cant_bordados",cant_bordados);
-    Iniciate_cart();
+    shopping_cart.Iniciate_cart();
+    $('#mount').html(`<i class="fas fa-dollar-sign" aria-hidden="true"></i> ${shopping_cart.cart_mount}`);
     carouselMainData.forEach(element=>
         $("#carousel-main").append(`
         <div class="carousel-main-item">
         <img id="carousel-img-${element.item}" class="d-none animate__animated" src="${element.foto.src}" alt="${element.foto.alt} data-item="${element.item}">
         </div>`)
-        );
+    );
     setTimeout(()=> $("#carousel-img-1").removeClass("d-none").addClass("animate__bounceInDown"), 100);
     setTimeout(()=> $("#carousel-img-2").removeClass("d-none").addClass("animate__bounceInDown"), 200);
-    setTimeout(()=> $("#carousel-img-3").removeClass("d-none").addClass("animate__bounceInDown"), 300);
-    if (screen.width <= 800){
-        setTimeout(()=> $("#header-nav").removeClass("d-none-responsive").addClass("animate__bounceInDown"), 300);   
-    }
-
-
-
-    
-         
+    setTimeout(()=> $("#carousel-img-3").removeClass("d-none").addClass("animate__bounceInDown"), 300);            
 });
 
 $(document).on("scroll",()=>{
     if(this.scrollY!=0){
         $("#header").css({ 
-             'background-color' : '#fbccd1',
+             'background-color' : '#FFFF95',
              'background-image':'', 
              'z-index':'2',        
             });
@@ -47,72 +26,37 @@ $(document).on("scroll",()=>{
     else{
         $("#header").css({ 
             'background-color' : '',
-            'background-image':'linear-gradient(#fbccd1,rgba(153,212,243,0.60))',          
+            'background-image':'linear-gradient(#FFFF95,rgba(153,212,243,0.60);)',          
            });
     }
 })
 
-$("#fondo").on('change',()=>{
-    cart=cart-flag_fondo;
-    fondo=$('#fondo').val();
-    localStorage.setItem("Fondo",fondo);
-    switch (fondo){
-        case "fondo-bordado":
-            flag_fondo=10;
-            break;
-        case "fondo-tela": 
-            flag_fondo=20;
-            break;         
-    }
-    cart+=flag_fondo;
-    $('#mount').html(`<i class="fas fa-dollar-sign" aria-hidden="true"></i> ${cart}`);
+
+
+$(".form-item").on('change',()=>{
+    shopping_cart.Iniciate_cart();
+    $('#mount').html(`<i class="fas fa-dollar-sign" aria-hidden="true"></i> ${shopping_cart.cart_mount}`);
 });
 
-$("#bordados").on('change',()=>{
-    cart=cart-flag_cantidadBordados;
-    cant_bordados=$('#bordados').val();
-    localStorage.setItem("cant_bordados",cant_bordados);
-    switch (cant_bordados){
-        case "bordados-20":
-            flag_cantidadBordados=2;
-            break;
-        case "bordados-50": 
-            flag_cantidadBordados=5;
-            break;
-        case "bordados-100": 
-            flag_cantidadBordados=7;
-            break;         
-    }
-    cart+=flag_cantidadBordados;
-    $('#mount').html(`<i class="fas fa-dollar-sign" aria-hidden="true"></i> ${cart}`);
+
+
+
+
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
 })
 
-function Iniciate_cart(){
-    switch (fondo){
-        case "fondo-bordado": 
-         flag_fondo=10;
-         break;
-        case "fondo-tela": 
-        flag_fondo=20; 
-        break;
-    }  
-    switch (cant_bordados){
-        case "bordados-20":
-            flag_cantidadBordados=2;
-            break;
-        case "bordados-50": 
-            flag_cantidadBordados=5;
-            break;
-        case "bordados-100": 
-            flag_cantidadBordados=7;
-            break;         
+$(".tamaño").on("blur",()=>{
+    if ($("#tamaño-width").val()>20 || $("#tamaño-width").val()<0 || $("#tamaño-height").val()<0 || $("#tamaño-height").val()>30 ){
+        $("#tamaño-width,#tamaño-height").prop("value",0);
     }
+})
 
-    cart+=flag_cantidadBordados+flag_fondo; 
-    $('#mount').html(`<i class="fas fa-dollar-sign" aria-hidden="true"></i> ${cart}`)    
-    
-}
-
+$("#cantidad-colores").on("blur",()=>{
+    if ($("#cantidad-colores").val()<1){
+        $("#cantidad-colores").prop("value",1);
+    }
+})
 
 
 /*var themeCounter=0;
@@ -153,4 +97,5 @@ var carouselMainData=[
         }
 
 ]
+
 

@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');//Navbar
 $light-blue-patcheame:rgba(153,212,243,0.60);
 $pink-patcheame:#fbccd1;
-
+$yellow-patcheame: #FFFF95 ;
 
 header {
   position: fixed;
   width:100%;
   height: 25vh;
-  background-image: linear-gradient($pink-patcheame,$light-blue-patcheame);
+  background-image: linear-gradient($yellow-patcheame,$light-blue-patcheame);
   display: flex;
   flex-direction: row;
   justify-content: space-between;

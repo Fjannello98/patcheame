@@ -1,22 +1,23 @@
 
 $light-blue-patcheame:rgba(153,212,243,0.60);
-
-
-   
-
-
+$pink-patcheame:#fbccd1;
+$yellow-patcheame: #FFFF95 ;
 
 footer {
   position: relative;
   bottom: 0 !important;
   height: 30vh;
-  background-color: $light-blue-patcheame;
+  background-color: $yellow-patcheame;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  border-top-left-radius: 40%;
+  border-top-right-radius: 40%;
   .footer-address {
       address {
+          display: block;
           list-style: none;
+          margin-top: 30%;
           li {
               font-family: 'Rajdhani', sans-serif;
               color: black;
@@ -28,7 +29,7 @@ footer {
   .footer-social-media {
       display: inline-block;
       a img {
-          width: 40px;
+          width: 50px;
           padding-top: 40%;
           margin: 2px;
           &:hover{
@@ -64,8 +65,16 @@ footer {
     height: 50vh;
     justify-content: center;
     align-items: center;
+    border-top-left-radius: 0;
+border-top-right-radius: 0;
 }
 
+.footer-social-media{
+    a img{
+        width: 40px;
+        padding-top: 0 !important;
+    }
+}
 .footer-copyright {
     position: relative !important;
     right: 0 !important;
